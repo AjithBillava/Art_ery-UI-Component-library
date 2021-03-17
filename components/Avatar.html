@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="page">
+        <header class="header">
+            <!-- <ul class="non-bullet">
+                <li>components library</li>
+            </ul> -->
+            <div>
+                <a class="logo" href="/index.html">Components Library</a>
+            </div>
+            <ul class="non-bullet header-social-links inline-list">
+                <li>home</li>
+                <li>github</li>
+                <li>facebook</li>
+                <li>twitter</li>
+            </ul>
+        </header>
+        <main class="main-layout">
+            <aside class="aside-nav">
+                <h1>navigation</h1>
+                <ul class="nav-items non-bullet">
+                    <li class="active-link">
+                        <a class="aside-nav-links " href="/components/Avatar.html">Avatar</a>
+                    </li>
+                    <li>Badge</li>
+                    <ul class="non-bullet intend-list">
+                        <li>Badge on Icons</li>
+                        <li>Badge on Avatars</li>
+                    </ul>
+
+                    <li>Button</li>
+                    <ul class="non-bullet intend-list">
+                        <li>Primary</li>
+                        <li> Link</li>
+                        <li>Icon Button</li>
+                        <li>Floating Action Button</li>
+                    </ul>
+
+                    <li>Card</li>
+                    <ul class="non-bullet intend-list">
+                        <li>Cards with badges</li>
+                        <li>Cards with dismiss</li>
+                        <li>Cards with text overlay</li>
+                        <li>Text only cards</li>
+                        <li>Vertical/Horizontal cards</li>
+                        <li>Cards with shadow</li>
+                    </ul>
+
+                    <li>Image</li>
+                    <ul class="non-bullet intend-list">
+                        <li>responsive image</li>
+                        <li> round image</li>
+                    </ul>
+
+                    <li>Input</li>
+                    <ul class="non-bullet intend-list">
+                        <li> textbox</li>
+                        <li>validation and errors styled (look into material ui or bootstrap for this)</li>
+                    </ul>
+
+                    <li>Lists</li>
+                    <ul class="non-bullet intend-list">
+                        <li>Spaced (like normal lists)</li>
+                        <li>Stacked (Notification Page)</li>
+                    </ul>
+
+                    <li>Navigation</li>
+                    <ul class="non-bullet intend-list">
+                        <li>Desktop (Simple)</li>
+                        <li>Submenus (do later)</li>
+                        <li>Hamburger/Drawer (do later)</li>
+                    </ul>
+
+                    <li>Modal</li>
+
+                    <li>
+                        Rating (for ecommerce)
+                    </li>
+                    <li>
+                        Slider (do later)
+                    </li>
+                    <li>
+                        Simplified Grid
+                        <ul class="non-bullet intend-list">
+                            <li>grid-2: two items in a grid</li>
+                            <li> grid-3: three items</li>
+                    </li>
+
+                </ul>
+
+
+                Text Utilities
+                <ul class="non-bullet intend-list">
+                    <li> headings</li>
+                    <li> small text</li>
+                    <li>gray text</li>
+                    <li> center text</li>
+                </ul>
+
+
+
+                <li>Toast/Notify/Snackbar</li>
+
+
+                <li>Add example pages to your documentation site (later)</li>
+                </ul>
+            </aside>
+            <div class="container">
+                <section class="home-intro">
+                    <h1 class="main-title">Avatar</h1>
+                    <!-- <h1 class="avatar-intro-title">Introduction</h1> -->
+                    <div class="avatar-intro-desc">
+                        The Avatar component is used to represent a user, and displays the profile picture, initials or
+                        fallback icon.
+                    </div>
+                    <div class="avatar-container">
+                        <ul class="non-bullet inline-list align-center">
+                            <li>
+                                <img class="avatar xs"
+                                    src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                    alt="Flamingo">
+                            </li>
+                            <li>
+                                <img class="avatar sm"
+                                    src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                    alt="Flamingo">
+                            </li>
+                            <li>
+                                <img class="avatar md"
+                                    src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                    alt="Flamingo">
+                            </li>
+                            <li>
+                                <img class="avatar lg"
+                                    src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                    alt="Flamingo">
+                            </li>
+                            <li>
+                                <img class="avatar xl"
+                                    src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                    alt="Flamingo">
+                            </li>
+                            <li>
+                                <img class="avatar xxl"
+                                    src="https://images.unsplash.com/photo-1497206365907-f5e630693df0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                    alt="Flamingo">
+                            </li>
+                            
+                        </ul>
+                        <div >
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+        <div id="footer">
+            Footer
+        </div>
+    </div>
+</body>
+
+</html>

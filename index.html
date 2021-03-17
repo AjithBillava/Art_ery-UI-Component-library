@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index1.css">
+    <title>Art_ery-UI</title>
+</head>
+
+<body>
+
+    <div id="page">
+        
+        <main class="main-layout">
+            <header class="header">
+
+                <div>
+                    <a class="logo" href="/style.css">Art_ery-UI</a>
+                </div>
+                <ul class="non-bullet header-social-links inline-list align-center">
+                    <li><a class="nav-links" href="#home">HOME</a></li>
+                    <li><a class="nav-links" href="https://github.com/ajithbillava">GITHUB</a></li>
+                    <li><a class="nav-links" href="https://www.facebook.com/ajitv.billava/">FACEBOOK</a></li>
+                    <li><a class="nav-links" href="https://twitter.com/_123_AVB">TWITTER</a></li>
+                </ul>
+    
+            </header>
+            <aside class="aside-nav">
+                <h1>Components</h1>
+                <ul class="nav-items non-bullet">
+                    <li>
+                        <a class="aside-nav-links " href="#avatar-sec">Avatar</a>
+                    </li>
+                    <li>
+                        <a class="aside-nav-links " href="#badge-sec">Badge</a>
+                    </li>
+                    <ul class="non-bullet intend-list">
+                        <li><a class="aside-nav-links " href="#badges-on-avatar">Badge on Avatar</a></li>
+                        <li><a class="aside-nav-links " href="#badges-on-icon">Badge on Icon</a></li>
+                    </ul>
+
+                    <li><a class="aside-nav-links " href="#btn-sec">Button</a></li>
+                    <ul class="non-bullet intend-list">
+                        <li><a class="aside-nav-links " href="#primary-btn">Primary button</a></li>
+                        <li> <a class="aside-nav-links " href="#link-btn">Link button</a></li>
+                        <li><a class="aside-nav-links " href="#icon-btn">Icon button</a></li>
+                        <li><a class="aside-nav-links " href="#float-btn">Float button</a></li>
+                    </ul>
+
+                    <li><a class="aside-nav-links " href="#card">Card</a></li>
+                    <ul class="non-bullet intend-list">
+                        <li><a class="aside-nav-links " href="#cards-with-badges">Cards with badges</a></li>
+                        <li><a class="aside-nav-links " href="#cards-with-dismiss">Cards with dismiss</a</li> <li><a
+                                    class="aside-nav-links " href="#cards-with-text-overlay">Cards with text overlay</a>
+                        </li>
+                        <li><a class="aside-nav-links " href="#text-only-cards">Text only cards</a></li>
+                        <li><a class="aside-nav-links " href="#vertical-cards">Vertical cards</a></li>
+                        <li><a class="aside-nav-links " href="#horizontal-cards">Horizontal cards</a></li>
+
+                        <li><a class="aside-nav-links " href="#cards-with-shadow">Cards with shadow</a></li>
+                    </ul>
+
+                    <li><a class="aside-nav-links" href="#Images">Images</a></li>
+                    <ul class="non-bullet intend-list">
+                        <li><a class="aside-nav-links" href="#resposive-images"> responsive image</a></li>
+                        <li><a class="aside-nav-links" href="#round-image">round image</a> </li>
+                    </ul>
+
+                    <li><a class="aside-nav-links" href="#Input">Input</a></li>
+                    <ul class="non-bullet intend-list">
+                        <li><a class="aside-nav-links" href="#Input"> textbox</a></li>
+                        <li><a class="aside-nav-links" href="#Input">validation and errors styled (look into material ui
+                                or bootstrap for this)</a></li>
+                    </ul>
+
+                    <li><a class="aside-nav-links" href="#Lists">Lists</a></li>
+                    <ul class="non-bullet intend-list">
+                        <li><a class="aside-nav-links" href="#spaced-list">Spaced (like normal lists)</a></li>
+                        <li><a class="aside-nav-links" href="#stacked-list">Stacked (Notification Page)</a></li>
+                    </ul>
+
+                    <li><a class="aside-nav-links" href="#navigation">Navigation</a></li>
+                    <ul class="non-bullet intend-list">
+                        <li><a class="aside-nav-links" href="#desktop-navigation">Desktop (Simple)</a></li>
+                        <li>Submenus (do later)</li>
+                        <li>Hamburger/Drawer (do later)</li>
+                    </ul>
+
+                    <li><a class="aside-nav-links" href="#modal">Modal</a></li>
+
+                    <li>
+                        Rating (for ecommerce)
+                    </li>
+                    <li>
+                        Slider (do later)
+                    </li>
+                    <li><a href="#Grid" class="aside-nav-links">Simplified Grid</a></li>
+                    <ul class="non-bullet intend-list">
+                        <li><a href="#grid-2" class="aside-nav-links">grid-2: two items in a grid</a></li>
+                        <li><a href="#grid-3" class="aside-nav-links">grid-3: three items in a grid</a></li>
+
+
+                    </ul>
+
+
+                    <li><a href="#Text-utilities" class="aside-nav-links">Text Utilities</a></li>
+                    <ul class="non-bullet intend-list">
+                        <li> <a href="#text-heading" class="aside-nav-links">Headers</a></li>
+                        <li> <a href="#grey-texts" class="aside-nav-links">Grey text</a></li>
+                        <li> <a href="#centered-texts" class="aside-nav-links">Centered text</a></li>
+                    </ul>
+
+
+
+                    <li><a class="aside-nav-links" href="#Toast">Toast</a></li>
+
+
+                    <!-- <li>Add example pages to your documentation site (later)</li> -->
+                </ul>
+            </aside>
+            <div class="container">
+                <section id="home" class="section">
+                    <h1 class="main-heading">Hello...!!</h1>
+                    <h1 class="intro-title">Introduction</h1>
+                    <div class="intro-desc">
+                        This is my component Library <b>Art_ery-UI</b>.
+                        <div>
+                            I am making this as my <b>"FIRST PROJECT"</b> of neoGCamp
+
+
+                            and trying to make this documentation site from the knowledege I gained in the camp
+
+                            <p> Tech stack used is <b>HTML,CSS and JS </b> </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="avatar-sec" class="section">
+                    <p class="main-heading">Avatar</p>
+                    <!-- <h1 class="avatar-intro-title">Introduction</h1> -->
+                    <div class="component-desc">
+                        The Avatar component is used to represent a user, and displays the profile picture, initials or
+                        fallback icon.
+                    </div>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center">
+                            <li>
+                                <img class="avatar xs"
+                                    src="https://image.freepik.com/free-photo/adorable-chocolate-labrador-retriever-portrait_53876-64833.jpg"
+                                    alt="Flamingo">
+                                <p>s</p>
+                            </li>
+                            <li>
+                                <img class="avatar sm"
+                                    src="https://image.freepik.com/free-photo/adorable-chocolate-labrador-retriever-portrait_53876-64833.jpg"
+                                    alt="Flamingo">
+                                <p>sm</p>
+
+                            </li>
+                            <li>
+                                <img class="avatar md"
+                                    src="https://image.freepik.com/free-photo/adorable-chocolate-labrador-retriever-portrait_53876-64833.jpg"
+                                    alt="Flamingo">
+                                <p>md</p>
+                            </li>
+                            <li>
+                                <img class="avatar lg"
+                                    src="https://image.freepik.com/free-photo/adorable-chocolate-labrador-retriever-portrait_53876-64833.jpg"
+                                    alt="Flamingo">
+                                <p>lg</p>
+                            </li>
+                            <li>
+                                <img class="avatar xl"
+                                    src="https://image.freepik.com/free-photo/adorable-chocolate-labrador-retriever-portrait_53876-64833.jpg"
+                                    alt="Flamingo">
+                                <p>xl</p>
+                            </li>
+                            <li>
+                                <img class="avatar xxl"
+                                    src="https://image.freepik.com/free-photo/adorable-chocolate-labrador-retriever-portrait_53876-64833.jpg">
+                                <p>xxl</p>
+                            </li>
+
+                        </ul>
+                        <div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="badge-sec" class="section">
+                    <p class="main-heading">Badges</p>
+                    <div class="component-desc">
+                        Badges are used to highlight an item's status for quick recognition.
+                    </div>
+                    <p class="sub-heading" id="badges-on-avatar">Badges on Avatar</p>
+
+                    <div class="component-container">
+
+                        <ul class="non-bullet inline-list align-center">
+                            <li class="badge-container ">
+                                <img class="avatar md warning"
+                                    src="https://image.freepik.com/free-photo/adorable-chocolate-labrador-retriever-portrait_53876-64833.jpg"
+                                    alt="">
+                                <span class="avatar-badge warning ">5</span>
+
+
+                            <li class="badge-container ">
+
+                                <img class="avatar md warning"
+                                    src="https://image.freepik.com/free-photo/adorable-chocolate-labrador-retriever-portrait_53876-64833.jpg"
+                                    alt="">
+                                <span class="avatar-badge error ">5</span>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="sub-heading" id="badges-on-icon">Badges on Icon</p>
+
+                    <div class="component-container">
+
+                        <ul class="non-bullet inline-list align-center">
+
+                            <li class="badge-container">
+                                <svg viewBox="0 0 24 24" class="icon sm">
+                                    <g>
+                                        <path
+                                            d="M21.697 16.468c-.02-.016-2.14-1.64-2.103-6.03.02-2.532-.812-4.782-2.347-6.335C15.872 2.71 14.01 1.94 12.005 1.93h-.013c-2.004.01-3.866.78-5.242 2.174-1.534 1.553-2.368 3.802-2.346 6.334.037 4.33-2.02 5.967-2.102 6.03-.26.193-.366.53-.265.838.102.308.39.515.712.515h4.92c.102 2.31 1.997 4.16 4.33 4.16s4.226-1.85 4.327-4.16h4.922c.322 0 .61-.206.71-.514.103-.307-.003-.645-.263-.838zM12 20.478c-1.505 0-2.73-1.177-2.828-2.658h5.656c-.1 1.48-1.323 2.66-2.828 2.66zM4.38 16.32c.74-1.132 1.548-3.028 1.524-5.896-.018-2.16.644-3.982 1.913-5.267C8.91 4.05 10.397 3.437 12 3.43c1.603.008 3.087.62 4.18 1.728 1.27 1.285 1.933 3.106 1.915 5.267-.024 2.868.785 4.765 1.525 5.896H4.38z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="avatar-badge error ">5</span>
+                            </li>
+                            <li class="badge-container">
+                                <svg viewBox="0 0 24 24" class="icon sm">
+                                    <g>
+                                        <path
+                                            d="M12 11.816c1.355 0 2.872-.15 3.84-1.256.814-.93 1.078-2.368.806-4.392-.38-2.825-2.117-4.512-4.646-4.512S7.734 3.343 7.354 6.17c-.272 2.022-.008 3.46.806 4.39.968 1.107 2.485 1.256 3.84 1.256zM8.84 6.368c.162-1.2.787-3.212 3.16-3.212s2.998 2.013 3.16 3.212c.207 1.55.057 2.627-.45 3.205-.455.52-1.266.743-2.71.743s-2.255-.223-2.71-.743c-.507-.578-.657-1.656-.45-3.205zm11.44 12.868c-.877-3.526-4.282-5.99-8.28-5.99s-7.403 2.464-8.28 5.99c-.172.692-.028 1.4.395 1.94.408.52 1.04.82 1.733.82h12.304c.693 0 1.325-.3 1.733-.82.424-.54.567-1.247.394-1.94zm-1.576 1.016c-.126.16-.316.246-.552.246H5.848c-.235 0-.426-.085-.552-.246-.137-.174-.18-.412-.12-.654.71-2.855 3.517-4.85 6.824-4.85s6.114 1.994 6.824 4.85c.06.242.017.48-.12.654z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="avatar-badge warning ">3</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="btn-sec" class="section">
+                    <p class="main-heading">Buttons</p>
+                    <div class="component-desc">
+                        The Button component is used to trigger an action or event, such as submitting a form, opening a
+                        dialog, canceling an action, or performing a delete operation.
+                    </div>
+                    <p id="primary-btn" class="sub-heading">Primary buttons</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+                            <li>
+                                <button class="primary-btn">Primary Button</button>
+                            </li>
+                            <li>
+                                <button class="btn red-bg">Red Button</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <p id="link-btn" class="sub-heading">Link button</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+                            <li>
+                                <button class="link-btn ">link button</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p id="icon-btn" class="sub-heading">Icon buttons</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+                            <li>
+                                <button id="like-btn" class="btn yellow-bg">
+                                    <svg viewBox="0 0 24 24" class="icon-btn  ">
+                                        <g>
+                                            <path
+                                                d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button id="comment-btn" class="btn yellow-bg">
+                                    <svg viewBox="0 0 24 24" class="icon-btn">
+                                        <g>
+                                            <path
+                                                d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button id="retweet-btn" class="btn yellow-bg">
+                                    <svg viewBox="0 0 24 24" class="icon-btn">
+                                        <g>
+                                            <path
+                                                d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <p id="float-btn" class="sub-heading">Float buttons</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+                            <li>
+                                <button class="float-btn yellow-bg">+</button>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="float-btn yellow-bg">
+                                    <svg viewBox="0 0 24 24">
+                                        <g>
+                                            <path
+                                                d="M8.8 7.2H5.6V3.9c0-.4-.3-.8-.8-.8s-.7.4-.7.8v3.3H.8c-.4 0-.8.3-.8.8s.3.8.8.8h3.3v3.3c0 .4.3.8.8.8s.8-.3.8-.8V8.7H9c.4 0 .8-.3.8-.8s-.5-.7-1-.7zm15-4.9v-.1h-.1c-.1 0-9.2 1.2-14.4 11.7-3.8 7.6-3.6 9.9-3.3 9.9.3.1 3.4-6.5 6.7-9.2 5.2-1.1 6.6-3.6 6.6-3.6s-1.5.2-2.1.2c-.8 0-1.4-.2-1.7-.3 1.3-1.2 2.4-1.5 3.5-1.7.9-.2 1.8-.4 3-1.2 2.2-1.6 1.9-5.5 1.8-5.7z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="float-btn yellow-bg">
+                                    <svg viewBox="0 0 24 24">
+                                        <g>
+                                            <path
+                                                d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z">
+                                            </path>
+                                            <path
+                                                d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="card" class="section">
+                    <p class="main-heading">Cards</p>
+                    <div class="component-desc">
+                        A Card is a flexible and extensible content container. It includes options for headers and
+                        footers, a wide variety of content, contextual background colors, and powerful display options
+                    </div>
+                    <p id="cards-with-badges" class="sub-heading"> Cards with badges</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+                            <li>
+                                <div class="vertical-card relative-box">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor itaque
+                                    excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo minima nobis
+                                    error rerum! Deserunt nemo ratione accusamus ipsum?
+                                    <span class="top-left badge">new</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="vertical-card relative-box">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor itaque
+                                    excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo minima nobis
+                                    error rerum! Deserunt nemo ratione accusamus ipsum?
+                                    <span class="top-right badge">new</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="vertical-card relative-box">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor itaque
+                                    excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo minima nobis
+                                    error rerum! Deserunt nemo ratione accusamus ipsum?
+                                    <span class="bottom badge">new</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p id="cards-with-dismiss" class="sub-heading"> Cards with dismiss</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+                            <li>
+                                <div class="vertical-card relative-box">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor itaque
+                                    excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo minima nobis
+                                    error rerum! Deserunt nemo ratione accusamus ipsum?
+                                    <span class="top-left dismiss-btn">x</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="vertical-card relative-box">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor itaque
+                                    excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo minima nobis
+                                    error rerum! Deserunt nemo ratione accusamus ipsum?
+                                    <span class="top-right dismiss-btn">x</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <p id="cards-with-text-overlay" class="sub-heading"> Cards with text overlay</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+                            <li>
+                                <div class="vertical-card relative-box">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor itaque
+                                    excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo minima nobis
+                                    error rerum! Deserunt nemo ratione accusamus ipsum?
+                                    <div class="top-left overlay">These are some overlay text to display</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="vertical-card relative-box">
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor
+                                        itaque excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo
+                                        minima nobis error rerum! Deserunt nemo ratione accusamus ipsum?
+                                    </div>
+                                    <div class="top-left overlay">These are some overlay text to display</div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <p id="text-only-cards" class="sub-heading"> Text only Cards</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+
+                            <li>
+                                <div class="vertical-card">
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor
+                                        itaque excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo
+                                        minima nobis error rerum! Deserunt nemo ratione accusamus ipsum?
+                                    </div>
+
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <p id="vertical-cards" class="sub-heading"> Vertical cards</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+
+                            <li>
+                                <div class="vertical-card">
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <p id="horizontal-cards" class="sub-heading"> Horizontal cards</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+
+                            <li>
+                                <div class="horizontal-card">
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <p id="cards-with-shadow" class="sub-heading"> Cards with shadow </p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+
+                            <li>
+                                <div class="vertical-card shadow">
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="Images" class="section">
+                    <p class="main-heading">
+                        Images
+                    </p>
+                    <div class="component-desc">
+                        These can be used to size the images
+                    </div>
+                    <p id="resposive-images" class="sub-heading">Responsive image</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list  row-center">
+                            <li class="align-center">
+                                <img class="img-fluid"
+                                    src="https://images.unsplash.com/photo-1589278560468-2f9bbaf07e90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1029&q=80"
+                                    alt="yellow-desk">
+                            </li>
+                            <li class="align-center">
+                                <img class="img-fluid"
+                                    src="https://images.unsplash.com/photo-1589278560468-2f9bbaf07e90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1029&q=80"
+                                    alt="yellow-desk">
+                            </li>
+                        </ul>
+                    </div>
+                    <p id="round-image" class="sub-heading">Round image</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+                            <li class="align-center">
+                                <img class="img-fluid round sm-img"
+                                    src="https://images.unsplash.com/photo-1589278560468-2f9bbaf07e90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1029&q=80"
+                                    alt="yellow-desk">
+                                <p>sm</p>
+                            </li>
+                            <li class="align-center">
+                                <img class="img-fluid round md-img"
+                                    src="https://images.unsplash.com/photo-1589278560468-2f9bbaf07e90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1029&q=80"
+                                    alt="yellow-desk">
+                                <p>md</p>
+                            </li class="align-center">
+                            <li class="align-center">
+                                <img class="img-fluid round lg-img"
+                                    src="https://images.unsplash.com/photo-1589278560468-2f9bbaf07e90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1029&q=80"
+                                    alt="yellow-desk">
+                                <p>lg</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="Input" class="section">
+                    <p class="main-heading">Input</p>
+                    <div class="component-desc">
+                        This can be used in the input tags
+                    </div>
+                    <div class="component-container">
+                        <ul class="non-bullet  align-center row-center">
+                            <li class="align-center">
+                                <input placeholder="Enter your email here" class="input curve" type="email">
+                                <div class="error-msg curve">The error message </div>
+                            </li>
+                            <li class="align-center">
+                                <input placeholder="Type your input here" class="input " type="text">
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+                <section id="Lists" class="section">
+                    <p class="main-heading">Lists</p>
+                    <div class="component-desc">
+                        This can be used in the lists
+                    </div>
+                    <p id="spaced-list" class="sub-heading">spaced list</p>
+                    <div class="component-container">
+                        <ul class="non-bullet  center ">
+                            <ul class="list vertical-card non-bullet">
+                                <li class="spaced-list-item">
+                                    <p>item 1</p>
+                                </li>
+                                <li class="spaced-list-item">
+                                    <p>item 2</p>
+                                </li>
+                                <li class="spaced-list-item">
+                                    <p>item 3</p>
+                                </li>
+                                <li class="spaced-list-item">
+                                    <p>item 4</p>
+                                </li>
+                            </ul>
+
+                        </ul>
+                    </div>
+                    <p id="stacked-list" class="sub-heading">Stacked lists</p>
+                    <div class="component-container">
+                        <ul class="non-bullet  center  ">
+                            <ul class="list vertical-card non-bullet">
+                                <li class="stacked-list-item">
+                                    <p>item 1</p>
+                                </li>
+                                <li class="stacked-list-item">
+                                    <p>item 2</p>
+                                </li>
+                                <li class="stacked-list-item">
+                                    <p>item 3</p>
+                                </li>
+                                <li class="stacked-list-item">
+                                    <p>item 4</p>
+                                </li>
+                            </ul>
+
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="navigation" class="section">
+                    <p class="main-heading">Input</p>
+                    <div class="component-desc">
+                        This can be used in the nav tags
+                    </div>
+                    <p id="desktop-navigation" class="sub-heading">Desktop navigation</p>
+                    <div class="component-container">
+                        <ul class="non-bullet  center">
+                            <li>
+                                <nav class="navigation">
+                                    <div>
+                                        <a class="nav-logo" href="/index.html">Components Library</a>
+                                    </div>
+                                    <ul class="non-bullet nav-social-links inline-list align-center">
+                                        <li>HOME</li>
+                                        <li>GITHUB</li>
+                                        <li>FACEBOOK</li>
+                                        <li>TWITTER</li>
+                                    </ul>
+                                </nav>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="modal" class="section">
+                    <p class="main-heading">Modal</p>
+                    <div class="component-desc">
+                        This can be used in the modaltags
+                    </div>
+                    <div class="component-container">
+                        <ul class="non-bullet  center">
+                            <li class="relative-box  align-center">
+                                <div class="vertical-card">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quasi
+                                    praesentium quis obcaecati ducimus incidunt in eius dignissimos provident, quisquam
+                                    neque? Quos ullam dolor assumenda asperiores dolorum sed doloribus.
+                                </div>
+                                <div class="modal ">
+                                    <p class="sub-heading center">Modal heading</p>
+                                    <hr>
+                                    <div class="description">
+                                        The modal description can be written here
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="Grid" class="section">
+                    <p class="main-heading">
+                        Grid
+                    </p>
+                    <div class="component-desc">
+                        use this for Grid layout
+                    </div>
+                    <p id="grid-2" class="sub-heading"> Grid-2</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center">
+                            <li>
+                                <div class="grid-2">
+                                    <div class="grid-item1">
+                                        first column
+                                    </div>
+                                    <div class="grid-item2">
+                                        second column
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="grid-2">
+                                    <div class="grid-item1">
+                                        first column
+                                    </div>
+                                    <div class="grid-item2">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, minima
+                                        asperiores distinctio aliquam laudantium ad veniam temporibus nemo nobis
+                                        consequuntur molestiae. Laboriosam distinctio ea repellendus tempore obcaecati
+                                        ab nisi quod.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p id="grid-3" class="sub-heading"> Grid-3</p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center">
+                            <li>
+                                <div class="grid-3">
+                                    <div class="grid-item1">
+                                        first column
+                                    </div>
+                                    <div class="grid-item2">
+                                        second column
+                                    </div>
+                                    <div class="grid-item3">
+                                        third column
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="grid-3">
+                                    <div class="grid-item1">
+                                        first column
+                                    </div>
+                                    <div class="grid-item2">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, minima
+                                        asperiores distinctio aliquam laudantium ad veniam temporibus nemo nobis
+                                        consequuntur molestiae. Laboriosam distinctio ea repellendus tempore obcaecati
+                                        ab nisi quod.
+                                    </div>
+                                    <div class="grid-item3">
+                                        third column
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="Text-utilities" class="section">
+                    <p class="main-heading"> Text Utilities </p>
+                    <div class="component-desc">This Text Utilities for different texts </div>
+                    <p id="text-heading" class="sub-heading">Headers</p>
+                    <div class="component-container">
+                        <ul class="non-bullet  ">
+                            <li>
+                                <p class="main-heading">The main Header</p>
+                            </li>
+                            <li>
+                                <p class="sub-heading">The sub header</p>
+                            </li>
+                            <li>
+                                <p class="component-desc">The grey description </p>
+                            </li>
+                            <li>
+                                <p>The normal text</p>
+                            </li>
+                            <li class=" small-text">
+                                <p>The small text</p>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <p id="grey-texts" class="sub-heading">Grey text</p>
+                    <div class="component-container">
+                        <ul class="non-bullet  ">
+                            <li>
+                                <p class="main-heading grey-text">The grey main Header</p>
+                            </li>
+                            <li>
+                                <p class="sub-heading grey-text">The grey sub header</p>
+                            </li>
+                            <li>
+                                <p class="grey-text component-desc">The grey description </p>
+                            </li>
+                            <li>
+                                <p class="grey-text"> The normal grey text</p>
+                            </li>
+                            <li class="grey-text small-text">
+                                <p>The small grey text</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <p id="centered-texts" class="sub-heading">Centered text</p>
+                    <div class="component-container">
+                        <ul class="non-bullet  ">
+                            <li class="center">
+                                <p class="main-heading ">The centered heading </p>
+                            </li>
+                            <li class="center">
+                                <p class="sub-heading ">The centered sub header</p>
+                            </li>
+                            <li class="center">
+                                <p class=" component-desc">The centered description </p>
+                            </li>
+                            <li class="center">
+                                <p>The centered normal text</p>
+                            </li>
+                            <li class="center small-text">
+                                <p>The centered small text</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section" id="Toast">
+                    <p class="main-heading">Toasts</p>
+                    <div class="component-desc">
+                        This can be used in toast messages
+                    </div>
+                    <div class="component-container">
+                        <ul class="non-bullet center">
+                            <li>
+                                <p class="toast-message">this is toast message <span class="dismiss">x</span></p>
+                            </li>
+                            <li>
+                                <p class="toast-message red-text red-border">this is toast message <span
+                                        class="dismiss">x</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+            <footer class="footer">
+                <div class="logo">Art_ery-UI</div>
+                <div class="description">Made with <b>HTML & CSS</b> by <a href="https://github.com/ajithbillava"
+                        class="aside-nav-links">Ajith Billava</a></div>
+            </footer>
+    </div>
+
+    </main>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
