@@ -1,26 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
 * {
     padding: 0rem;
     margin: 0rem;
-    font-family: Inter var, sans-serif;
 }
-
+    
 /* all variables are here 👇👇👇 */
 :root {
     --primary-bg: #FBBF24;
     --primary-font-color: #FFFBEB;
     --active-bg: #fde996;
     --css-bg: #f8f9fa;
-    --main-section-height: calc(100vh - 5rem);
+    --main-section-height: calc(100vh - 6.5rem);
     --error-color: #dd1616;
     --warning-color: #fc9e23;
     --primary-hover-color:#ffb700;
 }
 
 
-#page{
-    /* position: relative; */
-    
-    /* justify-content: space-between; */
+.body{
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .header{
@@ -30,9 +29,14 @@
     background-color: var(--primary-bg);
     color: var(--primary-font-color);
     grid-area: header;
-    position: absolute  ;
-    top: 0rem;
-    width: 97.5%;
+    position: fixed  ;
+    
+    top: 0;
+    left: 0;
+    /* the z index is used to elevate the header to top */
+    z-index: 900;
+
+    width: 100%;
     
 }
 
@@ -77,7 +81,7 @@
     margin-top: 4rem;
     grid-template-areas:"header header header" 
                         "sidebar container container"
-                        "footer footer footer";
+                        "sidebar container container";
     /* gap: 3rem; */
     height: calc(100vh+6rem);
     /* margin-bottom: 2rem; */
@@ -88,12 +92,13 @@
 } */
 
 .aside-nav {
-    display: block;
+    /* display: block; */
     /* important*/
     flex-direction: column;
     height: var(--main-section-height);
     width: 10rem;
-
+    position: fixed;
+    margin-bottom: 1rem;
     grid-area: sidebar;
     padding: 2rem;
     justify-content: center;
@@ -103,10 +108,12 @@
 
 .aside-nav-links {
     text-decoration: none;
+    padding: 0.2rem 1rem 0.2rem 0.1rem;
     color: rgba(66, 59, 59, 0.849);
     display: block;
 }
 .nav-links {
+    padding: 0.2rem 0.2rem;
     text-decoration: none;
     color: var(--primary-font-color);
     display: block;
@@ -122,7 +129,9 @@
     padding: 0.2rem 1rem 0.2rem 0.1rem;
     background-color: var(--active-bg);
     border-radius: 0.2rem;
-    color: black
+    color: black;
+    cursor: pointer;
+    
 }
 .nav-links:hover {
     text-decoration: none;
@@ -130,7 +139,8 @@
     padding: 0.2rem 0.2rem;
     background-color: var(--warning-color);
     border-radius: 0.2rem;
-    color: rgb(255, 254, 254)
+    cursor: pointer;
+    color: rgb(255, 254, 254);
 }
 .active-link {
     background-color: var(--active-bg);
@@ -145,16 +155,17 @@
     background-color:coral;
 } */
 .container {
-    
+    /* min-height: 76vh; */
     overflow-y: auto;
     grid-area: container;
-    
-    padding-right: 16rem;
-    margin-left: 4rem;
+    position: relative;
+    bottom: 0;
+    /* padding-right: 16rem; */
+    /* margin-left: 4rem; */
     padding-top: 2rem;
-    position: sticky;
+    /* margin-top: 7rem; */
     
-    height: var(--main-section-height);
+    /* height: var(--main-section-height); */
 }
 
 .nav-items>li {
@@ -171,12 +182,17 @@
 } */
 
 .main-heading {
-    font-size: 4rem;
+    font-size: 4.2rem;
     font-weight: 600;
 }
 .sub-heading{
     font-size: 2rem;
-    margin: 0.5rem 0;
+    padding-top: 0.5rem ;
+    font-weight: 600;
+}
+.section >.sub-heading{
+    font-size: 2rem;
+    padding-top: 3.8rem ;
     font-weight: 600;
 }
 
@@ -209,13 +225,17 @@
 }
 
 .section {
+    margin-top: 1.5rem;
+    margin-left: 4rem;
     padding-top: 3rem;
     display: block;
     min-height: 45rem; 
+    padding-right: 16rem;
+
 }
 
 .component-desc {
-    padding: 0.5rem 0;
+    padding-top: 0.5rem ;
     font-size: 1.5rem;
     font-weight: lighter;
 }
@@ -224,7 +244,7 @@
     padding: 1rem 0;
     border: 2px solid var(--active-bg);
     border-radius: 0.5rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .align-center {
@@ -234,6 +254,7 @@
 .component-container>ul>li {
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 100%;
 }
 
@@ -291,8 +312,8 @@
     position: absolute;
     color: white;
     border: 2px solid white;
-    min-width: 1rem;
-    min-height: 1rem;
+    width: 1rem;
+    height: 1rem;
     padding: 0.2rem;
     border-radius: 50%;
     display: flex;
@@ -318,7 +339,31 @@
     min-width: 2rem;
     margin-left: 1rem;
 }
+.rating-icon {
 
+    fill: var(--primary-bg);
+
+    min-height: 2rem ;
+    min-width: 2rem;
+    margin-left: 1rem;
+}
+#ratings .component-container>ul>li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+/* .row{
+    display: flex;
+    flex-direction: row;
+} */
+.checked-icon{
+    fill: var(--primary-bg);
+}
 
 /* Buttons */
 .primary-btn{
@@ -337,6 +382,7 @@
     font-size: 1.2rem;
     color: var(--primary-font-color);
     border-radius: 0.4rem;
+    cursor: pointer;
     margin-left:1rem;
 }
 .btn{
@@ -352,6 +398,7 @@
     background-color: rgb(252, 39, 39);
 }
 .red-bg:hover{
+    cursor: pointer;
     background-color: red;
 }
 .center{
@@ -388,12 +435,14 @@
     border: 1px solid #ff9900;
     color: #ff9900;
     border-radius: 0.4rem;
+    cursor: pointer;
     margin-left:1rem;
 }
 .yellow-bg{
     background-color:  var(--primary-bg);
 }
 .yellow-bg:hover{
+    cursor: pointer;
     background-color: var(--primary-hover-color);
 }
 .icon-btn {
@@ -412,12 +461,15 @@
     fill:rgb(10, 89, 236);
     min-height: 2rem ;
     min-width: 2rem;
+    cursor: pointer;
     color: pink;
 }
 #retweet-btn .icon-btn:hover{
     fill:green;
+    cursor: pointer;
     min-height: 2rem ;
     min-width: 2rem;
+    cursor: pointer;
     color: pink;
 }
 
@@ -439,6 +491,7 @@
     /* background-color: transparent; */
 }
 .float-btn:hover{
+    cursor: pointer;
     padding:1rem;
     border-radius: 50%;
     height: 3rem;
@@ -506,7 +559,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width:-webkit-fill-available;
+    width: 15rem;
 }
 
 .dismiss-btn{
@@ -650,6 +703,8 @@
 .modal{
     position: absolute;
     width:20rem ;
+    /* display: flex; */
+    display: none;
     top:auto;
     border: 1px solid var(--primary-bg);
     background-color: var(--active-bg);
@@ -657,6 +712,37 @@
     border-radius: 0.4rem;
     margin: 3rem;
 }
+.modal .description{
+    flex-direction: column;
+    display: flex;
+}
+#modal-sec .primary-btn{
+    margin-top: 1rem;
+}
+/* .modal .sub-heading{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    padding-top: 1rem ;
+    font-weight: 600;
+} */
+.modal-btns{
+    align-items: flex-end;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+}
+.modal-btns .primary-btn{
+    background-color: var(--primary-bg);
+    padding: 0.5rem 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--primary-font-color);
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+    margin-left:1rem;
+}
+
 .relative-box{
     position: relative;
 }
@@ -677,34 +763,43 @@
 }
 .grid-2{
     display: grid;
-    gap: 3rem;
+    /* gap: 3rem; */
     grid-template-columns: 1fr 1fr;
     border:1px solid var(--primary-bg);
     margin: 1rem;
     grid-template-areas: "grid-item1 grid-item2";
-    padding: 1rem;
+    
 }
 .grid-3{
     display: grid;
-    gap: 3rem;
+    /* gap: 3rem; */
     grid-template-columns: 1fr 1fr 1fr;
     border:1px solid var(--primary-bg);
     margin: 1rem;
     grid-template-areas: "grid-item1 grid-item2 grid-item3";
-    padding: 1rem;
+    /* padding: 1rem; */
     min-height: 10rem;
 }
 .grid-item1{
     grid-area: grid-item1;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
 }
 .grid-item3{
-    grid-area: grid-item3;
+    grid-area: grid-item3;display: flex;
+    align-items: center;
+    padding: 1rem;
 }
 
 
 
 .grid-item2{
     grid-area: grid-item2;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
 }
 /* 
 .main-layout {
@@ -745,13 +840,14 @@
 
 .footer{
     
-    grid-area: footer;
+    /* grid-area: footer; */
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-size: 1.2rem;
     color: var(--primary-font-color);
     background-color: var(--primary-bg);
-    width: 100%;
+    width: inherit;
+    padding:2rem 1rem;
     margin-top: 3rem;
 }
