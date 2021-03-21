@@ -400,11 +400,11 @@
 .btn{
     padding: 0.5rem 1rem;
     border: none;
-    /* font-size: 1.2rem; */
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: transparent; */
+ 
     color: var(--primary-font-color);
     border-radius: 0.4rem;
     cursor: pointer;
