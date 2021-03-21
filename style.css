@@ -574,6 +574,8 @@
 .vertical-card{
     max-width: 14rem;
     flex-direction: column;   
+    flex-wrap: wrap;
+    display: flex;
 }
 .card{
     border:1px solid var(--primary-bg);
@@ -588,7 +590,8 @@
 .horizontal-card{
     flex-direction: row;
     height: auto;
-
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .badge{
@@ -800,6 +803,9 @@
 
 .relative-box{
     position: relative;
+}
+.absolute-box{
+    position: absolute;
 }
 .nav-logo{
     color: var(--primary-font-color);
