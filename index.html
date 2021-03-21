@@ -28,7 +28,7 @@
                 </ul>
 
             </header>
-            <aside class="aside-nav">
+            <aside class="aside-nav grid-col">
                 <h1>Components</h1>
                 <ul class="nav-items non-bullet">
                     <li>
@@ -45,6 +45,8 @@
                     <li><a class="aside-nav-links " href="#btn-sec">Button</a></li>
                     <ul class="non-bullet intend-list">
                         <li><a class="aside-nav-links " href="#primary-btn">Primary button</a></li>
+                        <li> <a class="aside-nav-links " href="#secondary-btn">Secondary buttons</a></li>
+
                         <li> <a class="aside-nav-links " href="#link-btn">Link button</a></li>
                         <li><a class="aside-nav-links " href="#icon-btn">Icon button</a></li>
                         <li><a class="aside-nav-links " href="#float-btn">Float button</a></li>
@@ -121,7 +123,7 @@
                     <!-- <li>Add example pages to your documentation site (later)</li> -->
                 </ul>
             </aside>
-            <div class="container">
+            <div class="container ">
                 <section id="home" class="section">
                     <h1 class="main-heading">Hello...!!</h1>
                     <h1 class="intro-title">Introduction</h1>
@@ -256,23 +258,67 @@
                         The Button component is used to trigger an action or event, such as submitting a form, opening a
                         dialog, canceling an action, or performing a delete operation.
                     </div>
-                    <p id="primary-btn" class="sub-heading">Primary buttons</p>
+                    <p id="primary-btn" class="sub-heading">Primary buttons <span class="grey-text">(differ in sizes)</span> </p>
                     <div class="component-container">
                         <ul class="non-bullet inline-list align-center row-center">
                             <li>
-                                <button class="primary-btn">Primary Button</button>
+                                <button class="btn  xs-btn primary-btn">xs Button</button>
                             </li>
                             <li>
-                                <button class="btn red-bg">Red Button</button>
+                                <button class="btn primary-btn">Red Button</button>
+                            </li> 
+                            <li>
+                                <button class="btn primary-btn md-btn">Primary Button</button>
                             </li>
+                           
+                            </li> 
+                            <li>
+                                <button class="btn  lg-btn primary-btn">secondar Button</button>
+                            </li> 
+                            <li>
+                                <button class="btn xl-btn primary-btn">XL-Button</button>
+                            </li> 
                         </ul>
                     </div>
-                    <p id="link-btn" class="sub-heading">Link button</p>
+                    <p id="secondary-btn" class="sub-heading">Secondary buttons <span class="grey-text">(differ in sizes)</span> </p>
                     <div class="component-container">
                         <ul class="non-bullet inline-list align-center row-center">
                             <li>
-                                <button class="link-btn ">link button</button>
+                                <button class="btn  xs-btn secondary-btn">xs Button</button>
                             </li>
+                            <li>
+                                <button class="btn secondary-btn">Red Button</button>
+                            </li> 
+                            <li>
+                                <button class="btn secondary-btn md-btn">Primary Button</button>
+                            </li>
+                           
+                            </li> 
+                            <li>
+                                <button class="btn  lg-btn secondary-btn">secondar Button</button>
+                            </li> 
+                            <li>
+                                <button class="btn xl-btn secondary-btn">XL-Button</button>
+                            </li> 
+                        </ul>
+                    </div>
+                    <p id="link-btn" class="sub-heading">Link button <span class="grey-text">(differ in sizes)</span></p>
+                    <div class="component-container">
+                        <ul class="non-bullet inline-list align-center row-center">
+                            <li>
+                                <button class="link-btn xs-btn btn ">link button</button>
+                            </li>
+                            <li>
+                                <button class="link-btn sm-btn btn ">link button</button>
+                            </li><li>
+                                <button class="link-btn md-btn btn ">link button</button>
+                            </li><li>
+                                <button class="link-btn lg-btn btn ">link button</button>
+                            </li>
+                            <li>
+                                <button class="link-btn xl-btn btn ">link button</button>
+                            </li>
+                            
                         </ul>
                     </div>
 
@@ -360,7 +406,7 @@
                     <div class="component-container">
                         <ul class="non-bullet inline-list align-center row-center">
                             <li>
-                                <div class="vertical-card relative-box">
+                                <div class="card vertical-card relative-box">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor itaque
                                     excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo minima nobis
                                     error rerum! Deserunt nemo ratione accusamus ipsum?
@@ -368,7 +414,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="vertical-card relative-box">
+                                <div class="card vertical-card relative-box">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor itaque
                                     excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo minima nobis
                                     error rerum! Deserunt nemo ratione accusamus ipsum?
@@ -376,7 +422,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="vertical-card relative-box">
+                                <div class="card vertical-card relative-box">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor itaque
                                     excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo minima nobis
                                     error rerum! Deserunt nemo ratione accusamus ipsum?
@@ -389,7 +435,7 @@
                     <div class="component-container">
                         <ul class="non-bullet inline-list align-center row-center">
                             <li>
-                                <div class="vertical-card relative-box">
+                                <div class="card vertical-card relative-box">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor itaque
                                     excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo minima nobis
                                     error rerum! Deserunt nemo ratione accusamus ipsum?
@@ -397,7 +443,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="vertical-card relative-box">
+                                <div class="card vertical-card relative-box">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor itaque
                                     excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo minima nobis
                                     error rerum! Deserunt nemo ratione accusamus ipsum?
@@ -411,7 +457,7 @@
                     <div class="component-container">
                         <ul class="non-bullet inline-list align-center row-center">
                             <li>
-                                <div class="vertical-card relative-box">
+                                <div class="card vertical-card relative-box">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor itaque
                                     excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo minima nobis
                                     error rerum! Deserunt nemo ratione accusamus ipsum?
@@ -419,7 +465,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="vertical-card relative-box">
+                                <div class="card vertical-card relative-box">
                                     <div>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor
                                         itaque excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo
@@ -438,7 +484,7 @@
                         <ul class="non-bullet inline-list align-center row-center">
 
                             <li>
-                                <div class="vertical-card">
+                                <div class=card vertical-card">
                                     <div>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quis dolor
                                         itaque excepturi sint odio quisquam amet explicabo, quam, voluptatibus quo
@@ -456,7 +502,7 @@
                         <ul class="non-bullet inline-list align-center row-center">
 
                             <li>
-                                <div class="vertical-card">
+                                <div class="card vertical-card">
                                     <div>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
@@ -474,7 +520,7 @@
                         <ul class="non-bullet inline-list align-center row-center">
 
                             <li>
-                                <div class="horizontal-card">
+                                <div class="card horizontal-card">
                                     <div>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
@@ -496,7 +542,7 @@
                         <ul class="non-bullet inline-list align-center row-center">
 
                             <li>
-                                <div class="vertical-card shadow">
+                                <div class="vertical-card card  shadow">
                                     <div>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
@@ -589,7 +635,7 @@
                     <p id="spaced-list" class="sub-heading">spaced list</p>
                     <div class="component-container">
                         <ul class="non-bullet  center ">
-                            <ul class="list vertical-card non-bullet">
+                            <ul class="list card vertical-card non-bullet">
                                 <li class="spaced-list-item">
                                     <p>item 1</p>
                                 </li>
@@ -609,7 +655,7 @@
                     <p id="stacked-list" class="sub-heading">Stacked lists</p>
                     <div class="component-container">
                         <ul class="non-bullet  center  ">
-                            <ul class="list vertical-card non-bullet">
+                            <ul class="list card  vertical-card non-bullet">
                                 <li class="stacked-list-item">
                                     <p>item 1</p>
                                 </li>
@@ -663,12 +709,12 @@
                     <div class="component-container">
                         <ul class="non-bullet  center">
                             <li class="relative-box  align-center">
-                                <div class="vertical-card space-between">
+                                <div class="vertical-card card  space-between">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestias quasi
                                     praesentium quis obcaecati ducimus incidunt in eius dignissimos provident, quisquam
                                     neque? Quos ullam dolor assumenda asperiores dolorum sed doloribus.
 
-                                    <button id="show-modal" class="primary-btn">Show modal</button>
+                                    <button id="show-modal" class="primary-btn btn">Show modal</button>
                                 </div>
                                 <div id="modal" class="modal ">
                                     <p class="sub-heading center">Modal heading</p>
@@ -676,7 +722,7 @@
                                     <div class="description ">
                                         The modal description can be written here
                                         <div class="modal-btns">
-                                            <button id="close-modal" class="primary-btn ">close</button>
+                                            <button id="close-modal" class="primary-btn btn">close</button>
                                         </div>
                                     </div>
                                 </div>
