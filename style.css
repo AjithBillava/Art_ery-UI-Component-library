@@ -572,7 +572,7 @@
 
 /* Cards */
 .vertical-card{
-    max-width: 14rem;
+    /* max-width: 14rem; */
     flex-direction: column;   
     flex-wrap: wrap;
     display: flex;
@@ -584,13 +584,26 @@
     align-items: center;
     padding: 1.5rem;
     margin: 1rem;
+    min-height: 10rem;
     border-radius: 0.4rem;
+}
+.sm-width-card{
+    max-width: 10rem;
+}
+.md-width-card{
+    max-width: 14rem;
+}
+.lg-width-card{
+    max-width: 20rem;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .horizontal-card{
     flex-direction: row;
-    height: auto;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     display: flex;
 }
 
