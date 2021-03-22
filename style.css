@@ -815,9 +815,16 @@
 }
 .modal{
     position: absolute;
+    background-color: rgba(128, 128, 128, 0.521);
+    width: max-content;
+    height: max-content;
+    display: none;
+    top: auto;
+}
+.modal-contents{
     width:20rem ;
     /* display: flex; */
-    display: none;
+    /* display: none; */
     top:auto;
     border: 1px solid var(--primary-bg);
     background-color: var(--active-bg);
