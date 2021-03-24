@@ -10,32 +10,41 @@
     <title>Art_ery-UI | documentation</title>
 </head>
 
-<body class="body">
+<body class="body ">
 
     <div id="page">
 
         <main class="main-layout">
-            <header class="header">
+            <header id="header" class="header">
 
                 <div>
                     <a class="logo" href="/index.html">Art_ery-UI</a>
                 </div>
-                <ul class="non-bullet header-social-links inline-list align-center">
+
+                <ul class="non-bullet header-links inline-list align-center">
                     <li><a class="nav-links" href="#home">HOME</a></li>
                     <li><a class="nav-links" href="https://github.com/ajithbillava">GITHUB</a></li>
                     <li><a class="nav-links" href="https://www.facebook.com/ajitv.billava/">FACEBOOK</a></li>
                     <li><a class="nav-links" href="https://twitter.com/_123_AVB">TWITTER</a></li>
                 </ul>
 
+                <!-- <button class="btn primary-color-bg "> -->
+                <div id="ham-burger" class="ham-burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- </button> -->
+
             </header>
-            <aside class="aside-nav primary-color-bg">
+            <aside class="aside-nav aside-bg">
                 <h1>Components</h1>
                 <ul class="nav-items non-bullet">
                     <li>
                         <a class="aside-nav-links " href="#avatar-sec">Avatar</a>
                     </li>
                     <li>
-                        <a  class="aside-nav-links " href="#badge-sec">Badge</a>
+                        <a class="aside-nav-links " href="#badge-sec">Badge</a>
                     </li>
                     <ul class="non-bullet intend-list">
                         <li><a class="aside-nav-links " href="#badges-on-avatar">Badge on Avatar</a></li>
@@ -96,9 +105,9 @@
                     <li>
                         <a href="#ratings" class="aside-nav-links">Rating (for ecommerce)</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         Slider (do later)
-                    </li>
+                    </li> -->
                     <li><a href="#Grid" class="aside-nav-links">Simplified Grid</a></li>
                     <ul class="non-bullet intend-list">
                         <li><a href="#grid-2" class="aside-nav-links">grid-2: two items in a grid</a></li>
@@ -123,7 +132,52 @@
                     <!-- <li>Add example pages to your documentation site (later)</li> -->
                 </ul>
             </aside>
-            <div class="container ">
+            <div id="mobile-nav" class="mobile-nav">
+                <ul class="non-bullet">
+                    <li>
+                        <a id="avatar-link" class="mobile-nav-links" href="#avatar-sec">Avatar</a>
+                    </li>
+                    <li>
+                        <a id="badges-link" href="#bagde-sec" class="mobile-nav-links">Badges</a>
+                    </li>
+                    <li>
+                        <a id="buttons-link" href="#btn-sec" class="mobile-nav-links">Buttons</a>
+                    </li>
+                    <li>
+                        <a id="card-link" href="#card" class="mobile-nav-links">Card</a>
+                    </li>
+                    <li>
+                        <a id="images-link" href="#Images" class="mobile-nav-links">Images</a>
+                    </li>
+                    <li>
+                        <a id="inputs-link" href="#Inputs" class="mobile-nav-links">Inputs</a>
+                    </li>
+                    <li>
+                        <a id="navigation-link" href="#navigation" class="mobile-nav-links">Navigation</a>
+                    </li>
+                    <li>
+                        <a id="modal-link" href="#modal-sec" class="mobile-nav-links">Modal section</a>
+                    </li>
+                    <li>
+                        <a id="rating-link" href="#ratings" class="mobile-nav-links">Ratings</a>
+                    </li>
+                    <!-- <li><a href="#slider" class="mobile-nav-links"></a></li> -->
+                    <li>
+                        <a id="grid-link" href="#Grid" class="mobile-nav-links">Grid</a>
+                    </li>
+                    <li>
+                        <a id="text-utilities-link" href="#Text-utilities" class="mobile-nav-links">Text Utilities</a>
+                    </li>
+                    <li><a id="toast-link" href="#Toast" class="mobile-nav-links">Toast</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div id="container" class="container ">
+
+
+
                 <section id="home" class="section">
                     <h1 class="main-heading">Hello...!!</h1>
                     <h1 class="intro-title">Introduction</h1>
@@ -258,7 +312,8 @@
                         The Button component is used to trigger an action or event, such as submitting a form, opening a
                         dialog, canceling an action, or performing a delete operation.
                     </div>
-                    <p id="primary-btn" class="sub-heading">Primary buttons <span class="grey-text">(differ in sizes)</span> </p>
+                    <p id="primary-btn" class="sub-heading">Primary buttons <span class="grey-text">(differ in
+                            sizes)</span> </p>
                     <div class="component-container">
                         <ul class="non-bullet inline-list align-center row-center">
                             <li>
@@ -266,21 +321,22 @@
                             </li>
                             <li>
                                 <button class="btn primary-btn">SM-Button</button>
-                            </li> 
+                            </li>
                             <li>
                                 <button class="btn primary-btn md-btn">MD-Button</button>
                             </li>
-                           
-                            </li> 
+
+                            </li>
                             <li>
                                 <button class="btn  lg-btn primary-btn">LG-Button</button>
-                            </li> 
+                            </li>
                             <li>
                                 <button class="btn xl-btn primary-btn">XL-Button</button>
-                            </li> 
+                            </li>
                         </ul>
                     </div>
-                    <p id="secondary-btn" class="sub-heading">Secondary buttons <span class="grey-text">(differ in sizes)</span> </p>
+                    <p id="secondary-btn" class="sub-heading">Secondary buttons <span class="grey-text">(differ in
+                            sizes)</span> </p>
                     <div class="component-container">
                         <ul class="non-bullet inline-list align-center row-center">
                             <li>
@@ -288,21 +344,22 @@
                             </li>
                             <li>
                                 <button class="btn secondary-btn">SM-Button</button>
-                            </li> 
+                            </li>
                             <li>
                                 <button class="btn secondary-btn md-btn">MD-Button</button>
                             </li>
-                           
-                            </li> 
+
+                            </li>
                             <li>
                                 <button class="btn  lg-btn secondary-btn">LG-Button</button>
-                            </li> 
+                            </li>
                             <li>
                                 <button class="btn xl-btn secondary-btn">XL-Button</button>
-                            </li> 
+                            </li>
                         </ul>
                     </div>
-                    <p id="link-btn" class="sub-heading">Link button <span class="grey-text">(differ in sizes)</span></p>
+                    <p id="link-btn" class="sub-heading">Link button <span class="grey-text">(differ in sizes)</span>
+                    </p>
                     <div class="component-container">
                         <ul class="non-bullet inline-list align-center row-center">
                             <li>
@@ -310,16 +367,18 @@
                             </li>
                             <li>
                                 <a href="#link-btn" class="text-decoration-none link-btn sm-btn btn ">SM-Button</a>
-                            </li><li>
+                            </li>
+                            <li>
                                 <a href="#link-btn" class="text-decoration-none link-btn md-btn btn ">MD-Button</a>
-                            </li><li>
+                            </li>
+                            <li>
                                 <a href="#link-btn" class="text-decoration-none link-btn lg-btn btn ">LG-Button</a>
                             </li>
                             <li>
                                 <a href="#link-btn" class="text-decoration-none link-btn xl-btn btn ">XL-Button</a>
                             </li>
-                            
-                            
+
+
                         </ul>
                     </div>
 
@@ -694,7 +753,7 @@
                     <div class="component-container">
                         <ul class="non-bullet  center">
                             <li>
-                                <nav class="navigation">
+                                <nav class="navigation wrap">
                                     <div>
                                         <a class="nav-logo" href="/index.html">Components Library</a>
                                     </div>
@@ -728,16 +787,16 @@
                                     <button id="show-modal" class="primary-btn btn">Show modal</button>
                                 </div>
                                 <div id="modal" class="modal ">
-                                   <div class="modal-contents">
-                                    <p class="sub-heading center">Modal heading</p>
-                                    <hr>
-                                    <div class="description ">
-                                        The modal description can be written here
-                                        <div class="modal-btns">
-                                            <button id="close-modal" class="primary-btn btn">close</button>
+                                    <div class="modal-contents">
+                                        <p class="sub-heading center">Modal heading</p>
+                                        <hr>
+                                        <div class="description ">
+                                            The modal description can be written here
+                                            <div class="modal-btns">
+                                                <button id="close-modal" class="primary-btn btn">close</button>
+                                            </div>
                                         </div>
                                     </div>
-                                   </div>
                                 </div>
                             </li>
 
@@ -766,7 +825,7 @@
 
                                 </div>
                             </li>
-                            <li >
+                            <li>
                                 <div class="align-center">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon"
                                         viewBox="0 0 32 32">
@@ -778,7 +837,7 @@
 
                                 </div>
                             </li>
-                            <li >
+                            <li>
                                 <div class="align-center">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon"
                                         viewBox="0 0 32 32">
@@ -790,7 +849,7 @@
 
                                 </div>
                             </li>
-                            <li >
+                            <li>
                                 <div class="align-center">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon"
                                         viewBox="0 0 32 32">
@@ -815,22 +874,22 @@
                                 </div>
                             </li>
                         </ul>
-                        
+
                         <ul class="non-bullet center">
-                            <li >
+                            <li>
                                 <p>1-star</p>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
                                 </div>
                             </li>
-                            <li >
+                            <li>
                                 <div class="align-center">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon"
                                         viewBox="0 0 32 32">
@@ -841,7 +900,7 @@
                                     </svg>
 
                                 </div>
-                            <li >
+                            <li>
                                 <div class="align-center">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon"
                                         viewBox="0 0 32 32">
@@ -876,31 +935,31 @@
                                 </div>
                         </ul>
                         <ul class="non-bullet center">
-                            <li >
+                            <li>
                                 <p>2 star</p>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
                                 </div>
                             </li>
-                            <li >
+                            <li>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
                                 </div>
-                            <li >
+                            <li>
                                 <div class="align-center">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon"
                                         viewBox="0 0 32 32">
@@ -935,39 +994,39 @@
                                 </div>
                         </ul>
                         <ul class="non-bullet center">
-                            <li >
+                            <li>
                                 <p>3 star</p>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
                                 </div>
                             </li>
-                            <li >
+                            <li>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
                                 </div>
-                            <li >
+                            <li>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
 
                                 </div>
@@ -993,53 +1052,54 @@
                                     </svg>
 
                                 </div>
-                        </ul> <ul class="non-bullet center">
-                            <li >
+                        </ul>
+                        <ul class="non-bullet center">
+                            <li>
                                 <p>4 star</p>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
                                 </div>
                             </li>
-                            <li >
+                            <li>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
-
-
-                                </div>
-                            <li >
-                                <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
 
                                 </div>
                             <li>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
+
+
+                                </div>
+                            <li>
+                                <div class="align-center">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
 
                                 </div>
@@ -1056,69 +1116,69 @@
                                 </div>
                         </ul>
                         <ul class="non-bullet center">
-                            <li >
+                            <li>
                                 <p>5 star</p>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
                                 </div>
                             </li>
-                            <li >
+                            <li>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
-
-                                </div>
-                            <li >
-                                <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
 
                                 </div>
                             <li>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
                                 </div>
                             <li>
                                 <div class="align-center">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="rating-icon checked-icon"
-                                    viewBox="0 0 32 32">
-                                    <title>star-full</title>
-                                    <path
-                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
-                                    </path>
-                                </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
+
+                                </div>
+                            <li>
+                                <div class="align-center">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        class="rating-icon checked-icon" viewBox="0 0 32 32">
+                                        <title>star-full</title>
+                                        <path
+                                            d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                        </path>
+                                    </svg>
 
 
                                 </div>
                         </ul>
                     </div>
 
-                    
+
                 </section>
 
                 <section id="Grid" class="section">
@@ -1266,7 +1326,7 @@
                         This can be used in toast messages
                     </div>
                     <div class="component-container">
-                        <ul class="non-bullet center">
+                        <ul class="non-bullet center wrap horizontal-card">
                             <li>
                                 <p class="toast-message">this is toast message <span class="dismiss">x</span></p>
                             </li>
@@ -1278,17 +1338,28 @@
                     </div>
                 </section>
                 <footer class="footer">
-                    <div class="logo"><a class="nav-links" href="/index.html">Art_ery-UI</a> </div>
-                    <div class="description">Made with <b>HTML & CSS</b> by <a href="https://github.com/ajithbillava"
-                            class="nav-links">Ajith Billava</a></div>
+                    <div class="logo">
+                        <a class="nav-links" href="/index.html">Art_ery-UI</a>
+                    </div>
+                    <div class="description">
+                        <div>
+                            Made with <b>HTML & CSS</b> by <a href="https://github.com/ajithbillava"
+                                class="nav-links">Ajith Billava</a>
+                        </div>
+                    </div>
                 </footer>
-
+                <a href="#header" class="text-decoration-none floating-arrow primary-color-bg shadow">
+                    ⬆
+                </a>
             </div>
             <!-- <footer class="footer">
                 <div class="logo">Art_ery-UI</div>
                 <div class="description">Made with <b>HTML & CSS</b> by <a href="https://github.com/ajithbillava"
                         class="aside-nav-links">Ajith Billava</a></div>
             </footer> -->
+
+
+
     </div>
 
     </main>
@@ -1296,7 +1367,7 @@
     </div>
 
 
-<script src="/index.js"></script>
+    <script src="/index.js"></script>
 
 
 </body>
