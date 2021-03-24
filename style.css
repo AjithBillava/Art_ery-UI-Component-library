@@ -49,6 +49,9 @@
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* padding: 2rem; */
 }
 
@@ -235,9 +238,14 @@
     font-weight: 600;
 }
 
+.home-header {
+    font-size: 4.2rem;
+    font-weight: 600;
+}
+
 .sub-heading {
-   display: flex;
-   flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 2rem;
     padding-top: 0.5rem;
     font-weight: 600;
@@ -889,7 +897,7 @@
     width: 100vw;
     height: 100vh;
     display: none;
-    margin:auto;
+    margin: auto;
     justify-content: center;
     align-items: center;
     top: 0;
@@ -1093,9 +1101,11 @@
 .ham-burger {
     display: none;
 }
-.mobile-nav{
+
+.mobile-nav {
     display: none;
 }
+
 .floating-arrow {
     display: none;
 }
@@ -1110,7 +1120,8 @@
         padding-left: 0.5rem;
 
     }
-    .card{
+
+    .card {
         padding: 1.5rem 1.2rem;
     }
 
@@ -1122,8 +1133,9 @@
     .aside-nav {
         display: none;
         /* transition: 100s; */
-    } 
-    .mobile-nav{
+    }
+
+    .mobile-nav {
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -1138,17 +1150,20 @@
         margin-top: 3.5rem;
         z-index: 500;
     }
+
     /* .container{
         display: none;
     } */
-    .mobile-nav>ul{
+    .mobile-nav>ul {
         position: relative;
         /* height: var(--main-section-height); */
     }
-    .mobile-nav>ul>li{
+
+    .mobile-nav>ul>li {
         padding: 0.75rem;
     }
-    .mobile-nav-links{
+
+    .mobile-nav-links {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1156,6 +1171,7 @@
         color: black;
         font-size: 1.5rem;
     }
+
     .main-layout {
         display: flex;
     }
@@ -1189,12 +1205,12 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        width: 4rem;
-        height: 4rem;
+        width: 3.5rem;
+        height: 3.5rem;
         position: fixed;
-        bottom: 3rem;
-        right: 3.6rem;
-        font-size: 2.5rem;
+        bottom: 2.5rem;
+        right: 2rem;
+        font-size: 2rem;
         color: white;
         border: none;
         /* background-color: var(--secondary-color); */
@@ -1203,22 +1219,38 @@
     .floating-arrow:hover {
         box-shadow: none;
     }
-    .footer{
+
+    .footer {
         /* padding-bottom: 9rem; */
         flex-shrink: 2 1;
     }
 
-    
-   
+
+
 }
 
 @media (max-width :485px) {
     .section {
-        padding: 3.5rem 8.5% 0 8.5%;
+        padding: 3.5rem 4.5% 0 4.5%;
     }
 
     .horizontal-card {
         flex-wrap: wrap;
         flex-shrink: 2;
+    }
+
+    .home-header {
+
+        font-size: 4rem;
+        font-weight: 600;
+
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        padding: 2rem 0.2rem;
     }
 }
