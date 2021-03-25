@@ -1134,6 +1134,11 @@
     }
 
 }
+@media(min-width:780px){
+    .container{
+        display: flex;
+    }
+}
 
 /* BReakpoints for responsiveness */
 @media(max-width:780px) {
@@ -1142,7 +1147,9 @@
         display: none;
         /* transition: 100s; */
     }
-
+    .hr{
+        width: 98vw;
+    }
     .mobile-nav {
         display: none;
         flex-direction: column;

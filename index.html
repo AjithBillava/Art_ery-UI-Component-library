@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="icon" href="/components/arteryicon.jpg">
     <meta charset="UTF-8">
@@ -8,23 +9,25 @@
     <link rel="stylesheet" href="/style.css">
     <title>Art_ery-UI </title>
 </head>
+
 <body class="body">
-    <div class="container">
+
+    <div>
         <header id="header" class="header">
 
-            <div>
-                <a class="logo" href="/index.html">Art_ery-UI</a>
+            <div class="logo">
+                <a class="nav-links" href="/index.html">Art_ery-UI</a>
             </div>
 
             <ul class="non-bullet header-links inline-list align-center">
                 <li><a class="nav-links" href="#home">HOME</a></li>
                 <li><a class="nav-links" href="https://github.com/ajithbillava">GITHUB</a></li>
-                <li><a class="nav-links" href="https://www.facebook.com/ajitv.billava/">FACEBOOK</a></li>
+                
                 <li><a class="nav-links" href="https://twitter.com/_123_AVB">TWITTER</a></li>
             </ul>
 
             <!-- <button class="btn primary-color-bg "> -->
-            <div id="ham-burger" class="ham-burger">
+            <div id="index-ham-burger" class="ham-burger">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -32,39 +35,63 @@
             <!-- </button> -->
 
         </header>
-        <main class="main">
-            <div class="home-page primary-color-bg justify-center">
-               <div class="intro-desc ">
-                   <!-- <p class="main-heading justify-center">
-                       ART_ERY-UI
-                   </p>
-                   <p class="md-txt grey-text center home-description">
-                       The one stop for designing all your web-apps 
-                   </p> -->
+        <div id="index-mobile-nav" class="mobile-nav">
+            <ul class="non-bullet">
 
-                   <div class="home-header card block-card ">
-                    The one stop for designing all your web-apps <span class="home-header primary-font-color">ART_ERY-UI</span>.
-                    <a class="btn text-decoration-none min-content-width secondary-btn md-btn" href="/documentation.html">DOCUMENTATION</a>
-                   </div>
-                   
-                   <div class="md-txt grey-text card active-color-bg">
-                       Art_ery-UI is a component library which can be used to build your websites to improve your efficiency...
-                   </div>
-               </div>
-               
-            </div>
-            <footer class="footer">
-                <div class="logo">
-                    <a class="nav-links" href="/index.html">Art_ery-UI</a>
-                </div>
-                <div class="description">
-                    <div>
-                        Made with <b>HTML & CSS</b> by <a href="https://github.com/ajithbillava"
-                            class="nav-links">Ajith Billava</a>
+                <li><a href="/index.html" id="mobile-home-link" class="mobile-nav-links">HOME</a></li>
+
+                <li><a class="mobile-nav-links" href="https://github.com/ajithbillava">GITHUB</a></li>
+
+                <li><a class="mobile-nav-links" href="https://twitter.com/_123_AVB">TWITTER</a></li>
+
+            </ul>
+        </div>
+        <div id="index-container" class="container">
+
+
+
+            <main class="main">
+
+                <div class="home-page primary-color-bg justify-center">
+                    <div class="intro-desc ">
+                        <!-- <p class="main-heading justify-center">
+                           ART_ERY-UI
+                       </p>
+                       <p class="md-txt grey-text center home-description">
+                           The one stop for designing all your web-apps 
+                       </p> -->
+
+                        <div class="home-header card block-card ">
+                            The one stop for designing all your web-apps <span
+                                class="home-header primary-font-color">ART_ERY-UI</span>.
+                            <a class="btn text-decoration-none min-content-width secondary-btn md-btn"
+                                href="/documentation.html">DOCUMENTATION</a>
+                        </div>
+
+                        <div class="md-txt grey-text card active-color-bg">
+                            Art_ery-UI is a component library which can be used to build your websites to improve your
+                            efficiency...
+                        </div>
                     </div>
+
                 </div>
-            </footer>
-        </main>
+                <footer class="footer">
+                    <div class="logo">
+                        <a class="nav-links" href="/index.html">Art_ery-UI</a>
+                    </div>
+                    <div class="description">
+                        <div>
+                            Made with <b>HTML & CSS</b> by <a href="https://github.com/ajithbillava"
+                                class="nav-links">Ajith Billava</a>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
     </div>
+
+
+    <script src="/index.js"></script>
 </body>
+
 </html>

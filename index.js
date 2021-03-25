@@ -1,63 +1,35 @@
-var closeModalBtn=document.querySelector("#close-modal");
-var showModalBtn=document.querySelector("#show-modal");
-var modal=document.querySelector("#modal")
 
-var asideNavLink=document.querySelector(".aside-nav-links")
+var isIndexHamBurgerClicked = true;
+var indexMobileNav = document.querySelector("#index-mobile-nav")
+var indexHamburgerBtn = document.querySelector("#index-ham-burger")
+var indexContainer = document.querySelector("#index-container");
+function indexHamBurgerFunction() {
+    if (isIndexHamBurgerClicked) {
+        indexMobileNav.style.display = "flex"
+        indexContainer.style.display = "none"
 
-var hamBugerBtn=document.querySelector(".ham-burger")
+        isIndexHamBurgerClicked = false
+    } else {
+        indexMobileNav.style.display = "none"
 
-var isHamBugerClicked=false;
-var mobileNav=document.querySelector("#mobile-nav");
+        indexContainer.style.display = "flex"
 
-var avatarLink=document.querySelector("#avatar-link");
-var badgesLink=document.querySelector("#badges-link")
-var buttonsLink=document.querySelector("#buttons-link")
-var cardLink=document.querySelector("#card-link")
-var imagesLink=document.querySelector("#images-link")
-var inputLink=document.querySelector("#inputs-link")
-var navigationLink=document.querySelector("#navigation-link")
-var modalLink=document.querySelector("#modal-link")
-var ratingsLink=document.querySelector("#rating-link")
-var gridLink=document.querySelector("#grid-link")
-var textUtilitiesLink=document.querySelector("#text-utilities-link")
-var toastLink=document.querySelector("#toast-link")
-
-
-var container=document.querySelector("#container");
-
-function hamBurgerFunction(){
-    if(isHamBugerClicked){
-        mobileNav.style.display="flex"
-        container.style.display="none"
-        isHamBugerClicked=false
-    }
-    else{
-        mobileNav.style.display="none"
-        container.style.display="flex"
-        isHamBugerClicked=true
+        isIndexHamBurgerClicked= true
 
     }
 }
+indexHamburgerBtn.addEventListener("click",indexHamBurgerFunction)
 
 
-// var
 
-// asideNavLink.addEventListener("click", ()=>asideNavLink.style.backgroundColor="#fc9e23")
-hamBugerBtn.addEventListener("click",hamBurgerFunction)
-avatarLink.addEventListener("click",hamBurgerFunction)
-badgesLink.addEventListener("click",hamBurgerFunction)
-buttonsLink.addEventListener("click",hamBurgerFunction)
-cardLink.addEventListener("click",hamBurgerFunction)
-imagesLink.addEventListener("click",hamBurgerFunction)
-inputLink.addEventListener("click",hamBurgerFunction)
-navigationLink.addEventListener("click",hamBurgerFunction)
-modalLink.addEventListener("click",hamBurgerFunction)
-ratingsLink.addEventListener("click",hamBurgerFunction)
-gridLink.addEventListener("click",hamBurgerFunction)
-textUtilitiesLink.addEventListener("click",hamBurgerFunction)
-toastLink.addEventListener("click",hamBurgerFunction)
 
-showModalBtn.addEventListener("click",()=>modal.style.display="flex")
+function windowResizeFunction() {
+    if (window.matchMedia("(min-width: 780px)").matches) { 
+        indexContainer.style.display = "flex";
+        indexMobileNav.style.display = "none"
+        isIndexHamBurgerClicked= true
 
-closeModalBtn.addEventListener("click",()=>{modal.style.display="none"})
+    } 
+}
 
+window.addEventListener("resize",windowResizeFunction)
