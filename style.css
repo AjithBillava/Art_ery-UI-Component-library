@@ -310,6 +310,7 @@
     font-weight: lighter;
 }
 
+
 .component-container {
     padding: 1rem 1rem;
     border: 2px solid var(--active-bg);
@@ -1051,15 +1052,15 @@
 }
 
 .md-txt {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .lg-txt {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .xl-txt {
-    font-size: 6rem;
+    font-size: 4.2rem;
 }
 
 .toast-message {
@@ -1213,7 +1214,11 @@
         transition: 0.4s;
     }
 
-
+    .code-cotainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .floating-arrow {
         display: flex;
