@@ -16,8 +16,8 @@
     --error-color: #dd1616;
     --warning-color: #fc9e23;
     --secondary-color: #0099ffd7;
-    --secondary-color-hover: #0099ff;
-    --primary-hover-color: #ffb700;
+    --secondary-color-hover: #0077ff;
+    --primary-hover-color: #ffa600;
 }
 
 
@@ -269,9 +269,9 @@
      padding-top: 0.5rem ;
 } */
 .intro-desc {
-    padding: 1rem 1rem;
+    padding: 1rem 0;
     font-size: 1.5rem;
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
     border-radius: 1rem;
     line-height: 1.5;
 }
@@ -553,7 +553,7 @@
 /* link buttons */
 .link-btn {
     background-color: transparent;
-
+    width: max-content;
     border: 1px solid var(--primary-bg);
     color: #ff9900;
 
@@ -903,6 +903,7 @@
 
 .modal {
     position: fixed;
+    transition: opacity 0.5s;
     background-color: rgba(94, 91, 91, 0.521);
     width: 100vw;
     height: 100vh;
@@ -1074,6 +1075,7 @@
 
 .dismiss {
     margin-left: 1rem;
+    cursor: pointer;
     color: inherit;
 }
 

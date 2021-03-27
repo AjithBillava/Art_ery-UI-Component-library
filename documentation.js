@@ -22,6 +22,11 @@ var gridLink = document.querySelector("#grid-link")
 var textUtilitiesLink = document.querySelector("#text-utilities-link")
 var toastLink = document.querySelector("#toast-link")
 
+var toastMsg1=document.querySelector("#toast-msg1")
+var toastMsg2=document.querySelector("#toast-msg2")
+var dimiss1=document.querySelector("#dismiss-msg1")
+var dimiss2=document.querySelector("#dismiss-msg2")
+
 
 var container = document.querySelector("#container");
 
@@ -73,7 +78,12 @@ showModalBtn.addEventListener("click", () => modal.style.display = "flex")
 closeModalBtn.addEventListener("click", () => {
     modal.style.display = "none"
 })
-
+dimiss1.addEventListener("click", () => {
+    toastMsg1.style.display = "none"
+})
+dimiss2.addEventListener("click", () => {
+    toastMsg2.style.display = "none"
+})
 
 
 

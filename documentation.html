@@ -191,18 +191,31 @@
 
 
                 <section id="home" class="section">
-                    <h1 class="main-heading">Hello...!!</h1>
+                    <h1 class="main-heading">Get started...!!</h1>
                     <h1 class="intro-title">Introduction</h1>
                     <div class="intro-desc">
-                        This is my component Library <b>Art_ery-UI</b>.
-                        <div>
-                            I am making this as my <b>"FIRST PROJECT"</b> of neoGCamp
+                        So here is how you can get start with <strong>ART_ERY-UI</strong>, the framework that will increase your design and performance of your website
+                    </div>
+                    <p class="lg-txt"> <strong>CSS</strong></p>
+                    <p class="component-desc">Copy-paste the stylesheet <strong>link</strong> into your <strong>head</strong> before all other stylesheets to load our CSS.</p>
+                    <div class="component-container">
+                        <pre>
+                            <!-- <span class="material-icons copy avatar">content_copy</span> -->
+                            <code class="language-html">
+                                &lt;link rel="stylesheet" href="https://artery-ui.netlify.app/style.css"&gt;
+                            </code>
+                        </pre>
+                    </div>
 
-
-                            and trying to make this documentation site from the knowledege I gained in the camp
-
-                            <p> Tech stack used is <b>HTML,CSS and JS </b> </p>
-                        </div>
+                    <p class="lg-txt"> <strong>JS</strong> </p>
+                    <p class="component-desc">Copy-paste the <strong>script</strong> file below your <strong>body</strong> using the following code.</p>
+                    <div class="component-container">
+                        <pre>
+                            <!-- <span class="material-icons copy avatar">content_copy</span> -->
+                            <code class="language-html">
+                                &lt;script src="https://artery-ui.netlify.app/documentation.js"&gt;&lt;/script&gt;
+                            </code>
+                        </pre>
                     </div>
                 </section>
 
@@ -313,9 +326,11 @@
                         </ul>
                         <pre>
                             <code class="language-html">
-                                &lt;img class="avatar md warning" src="https://image.freepik.com/free-photo/adorable-chocolate-labrador-retriever-portrait_53876-64833.jpg" alt=""&gt;&lt;span class="avatar-badge warning "&gt;5&lt;/span&gt;  
+                                &lt;div class="badge-container"&gt;
+                                    &lt;img class="avatar md warning" src="https://image.freepik.com/free-photo/adorable-chocolate-labrador-retriever-portrait_53876-64833.jpg" alt=""&gt;&lt;span class="avatar-badge warning "&gt;5&lt;/span&gt;  
 
-                                &lt;img class="avatar md warning" src="https://image.freepik.com/free-photo/adorable-chocolate-labrador-retriever-portrait_53876-64833.jpg" alt=""&gt; &lt;span class="avatar-badge error "&gt;5&lt;/span&gt;
+                                    &lt;img class="avatar md warning" src="https://image.freepik.com/free-photo/adorable-chocolate-labrador-retriever-portrait_53876-64833.jpg" alt=""&gt; &lt;span class="avatar-badge error "&gt;5&lt;/span&gt;
+                                &lt;/div&gt;
                             </code>
                         </pre>
                     </div>
@@ -357,7 +372,7 @@
                                         &lt;/path&gt;
                                     &lt;/g&gt;
                                 &lt;/svg&gt;
-                                &lt;span class="avatar-badge error "&gt;&lt;/span&gt;
+                                &lt;span class="avatar-badge error "&gt;5&lt;/span&gt;
                             &lt;/div&gt;
 
                             &lt;div class="badge-container"&gt;
@@ -368,7 +383,7 @@
                                         &lt;/path&gt;
                                     &lt;/g&gt;
                                 &lt;/svg&gt;
-                                &lt;span class="avatar-badge error "&gt;&lt;/span&gt;
+                                &lt;span class="avatar-badge warning "&gt;3&lt;/span&gt;
                             &lt;/div&gt;
                             </code>
                         </pre>
@@ -1118,13 +1133,16 @@
                                 </div>
                                 <div id="modal" class="modal ">
                                     <div class="modal-contents">
-                                        <p class="sub-heading center">Modal heading</p>
+                                        <div class="modal-btns">
+                                            <button id="close-modal" class="primary-btn btn round dismiss-btn">x</button>
+                                        </div>
+                                        <p class="sub-heading ">Modal heading</p>
                                         <hr>
                                         <div class="description ">
                                             The modal description can be written here
-                                            <div class="modal-btns">
+                                            <!-- <div class="modal-btns">
                                                 <button id="close-modal" class="primary-btn btn">close</button>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1141,13 +1159,14 @@
                                 &lt;/div&gt;
                                 &lt;div id="modal" class="modal "&gt;
                                     &lt;div class="modal-contents"&gt;
+                                    &lt;div class="modal-btns"&gt;
+                                        &lt;button id="close-modal" class="primary-btn btn round dismiss-btn">X&lt;/button&gt;
+                                    &lt;/div&gt;
                                         &lt;p class="sub-heading center"&gt;Modal heading&lt;/p&gt;
                                         &lt;hr&gt;
                                         &lt;div class="description "&gt;
                                             The modal description can be written here
-                                            &lt;div class="modal-btns"&gt;
-                                                &lt;button id="close-modal" class="primary-btn btn">close&lt;/button&gt;
-                                            &lt;/div&gt;
+                                           
                                         &lt;/div>
                                     &lt;/div>
                                 &lt;/div>
@@ -1742,17 +1761,16 @@
                     <div class="component-container">
                         <ul class="non-bullet center wrap horizontal-card">
                             <li>
-                                <p class="toast-message">this is toast message <span class="dismiss">x</span></p>
+                                <p id="toast-msg1" class="toast-message">this is toast message <span class="dismiss" id="dismiss-msg1">x</span></p>
                             </li>
                             <li>
-                                <p class="toast-message red-text red-border">this is toast message <span
-                                        class="dismiss">x</span></p>
+                                <p id="toast-msg2" class="toast-message red-text red-border">this is toast message <span class="dismiss" id="dismiss-msg2">x</span></p>
                             </li>
                         </ul>
                         <pre>
                             <code class="language-html">
-                                &lt;p class="toast-message"&gt;this is toast message &lt;span class="dismiss"&gt;x&lt;/span&gt;&lt;/p&gt;
-                                &lt;p class="toast-message red-text red-border"&gt;this is toast message &lt;span class="dismiss">x&lt;/span>&lt;/p&gt;
+                                &lt;p id="toast-msg1" class="toast-message"&gt;this is toast message &lt;span class="dismiss" id="dismiss-msg1"&gt;x&lt;/span&gt;&lt;/p&gt;
+                                &lt;p id="toast-msg2" class="toast-message red-text red-border"&gt;this is toast message &lt;span class="dismiss" id="dismiss-msg2">x&lt;/span>&lt;/p&gt;
                             </code>
                         </pre>
                     </div>
