@@ -590,15 +590,15 @@
 
 .icon-btn {
     fill: var(--primary-font-color);
-    min-height: 2rem;
-    min-width: 2rem;
+    max-height: 2rem;
+    max-width: 2rem;
     /* padding: 0.5rem; */
 }
 
 #like-btn .icon-btn:hover {
     fill: red;
-    min-height: 2rem;
-    min-width: 2rem;
+    max-height: 2rem;
+    max-width: 2rem;
     color: pink;
 }
 
