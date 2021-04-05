@@ -285,12 +285,17 @@
 }
 
 .intro-desc {
+    padding: var(--padding-1) 0;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    line-height: 1.5;
+}
+.index-intro-desc {
     padding: 0 var(--padding-8);
     font-size: 1.5rem;
     border-radius: 1rem;
     line-height: 1.5;
 }
-
 .active-color-bg {
     background-color: var(--active-bg);
 
