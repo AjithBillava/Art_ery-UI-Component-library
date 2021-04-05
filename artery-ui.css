@@ -993,6 +993,9 @@
 .absolute-box {
     position: absolute;
 }
+.fixed-box{
+    position: fixed;
+}
 
 .nav-logo {
     color: var(--primary-font-color);
