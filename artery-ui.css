@@ -89,11 +89,12 @@
     display: flex;
     justify-content: space-between;
     padding: var(--padding-1);
-    background-color: var(--primary-bg);
-    color: var(--primary-font-color);
+    background-color: white;
+    border-bottom: 8px solid var(--primary-bg);
+    color: black;
     grid-area: header;
     position: fixed;
-
+    box-shadow: 0 2px 5px rgba(70, 68, 68, 0.582);
     top: 0;
     left: 0;
     /* the z index is used to elevate the header to top */
@@ -199,7 +200,7 @@
 .nav-links {
     padding: 0.2rem 0.2rem;
     text-decoration: none;
-    color: var(--primary-font-color);
+    color: black;
     display: block;
     font-weight: 600;
 }
@@ -214,7 +215,7 @@
     background-color: var(--warning-color);
 
     border-radius: var(--border-radius-0-2);
-    color: black;
+    color: var(--primary-font-color);
     cursor: pointer;
 
 }
@@ -1121,6 +1122,8 @@
     background-color: var(--primary-bg);
     max-width: inherit;
     padding: 2rem 1rem;
+    box-shadow: 0 -2px 5px rgba(70, 68, 68, 0.582);
+    /* z-index: 3; */
     margin-top: var(--margin-3);
 }
 
@@ -1188,8 +1191,10 @@
         background-color: white;
         width: 100vw;
         min-height: 100%;
-        margin-top: 3.5rem;
-        z-index: 500;
+        margin-top: 4.5rem;
+        z-index: 3;
+        border-bottom: 8px solid var(--primary-bg);
+        border-top: 8px solid var(--primary-bg);
     }
 
     /* .container{
@@ -1212,6 +1217,10 @@
         color: black;
         font-size: 1.5rem;
     }
+    /* .mobile-nav-links:hover {
+        border-bottom: 8px solid var(--primary-bg);
+        background-color: rgba(236, 160, 19, 0.616);
+    } */
 
     .main-layout {
         display: flex;
@@ -1234,7 +1243,7 @@
     .ham-burger div {
         width: 35px;
         height: 5px;
-        background-color: white;
+        background-color: black;
         margin: 6px 0;
         transition: 0.4s;
     }
