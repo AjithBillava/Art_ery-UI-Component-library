@@ -2,6 +2,7 @@
 
 * {
     padding: 0rem;
+    color: white;
     margin: 0rem;
 }
 
@@ -82,9 +83,10 @@
 
 .body {
     font-family: 'Ubuntu', sans-serif;
-    /* background-color: #ffe6a7; */
+    background-color: #1e1d1d;
 }
 
+/* width */
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -105,13 +107,14 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-hover-color); 
   }
+
 .header {
     display: flex;
     justify-content: space-between;
     padding: var(--padding-1);
-    background-color: white;
+    background-color: #181717;
     border-bottom: 8px solid var(--primary-bg);
-    color: black;
+    color: white;
     grid-area: header;
     position: fixed;
     box-shadow: 0 2px 5px rgba(70, 68, 68, 0.582);
@@ -155,9 +158,8 @@
 
 }
 .card-bg {
-    background-color: var(--active-bg);
+    background-color: #131111;
 }
-
 /* .inline-list>li{
     padding: 0 2rem;
 } */
@@ -195,7 +197,7 @@
     justify-content: center;
     overflow-y: auto;
     overflow-x: auto;
-
+    background-color: #1e1d1d;
     
 }
 
@@ -215,15 +217,12 @@
     display: flex;
     text-decoration: none;
     padding: var(--aside-nav-links-padding);
-   
-    color: black;
     display: block;
 }
 
 .nav-links {
     padding: 0.2rem 0.2rem;
     text-decoration: none;
-    color: black;
     display: block;
     font-weight: 600;
 }
@@ -360,7 +359,7 @@
     padding: var(--padding-1) var(--padding-1);
     border: 2px solid var(--active-bg);
     border-radius: 0.5rem;
-    background-color: white;
+    background-color: #131111;
     margin-top: 2rem;
 }
 
@@ -673,7 +672,7 @@
     align-items: center;
     justify-content: center;
     border: none;
-    box-shadow: 0.5rem 0.5rem 1rem grey;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(31, 30, 30, 0.719);
     margin-left: var(--margin-1);
     fill: var(--primary-font-color);
     /* background-color: transparent; */
@@ -900,15 +899,14 @@
 }
 
 .spaced-list-item {
-    background-color: var(--active-bg);
+    background-color: rgba(0, 0, 0, 0.623);
     padding: 0.2rem 1rem;
-
     margin-bottom: var(--margin-1);
 
 }
 
 .stacked-list-item {
-    background-color: var(--active-bg);
+    background-color: rgba(0, 0, 0, 0.623);
     padding: 0.2rem 1rem;
     border-bottom: 1px solid var(--primary-bg);
 
@@ -1110,8 +1108,6 @@
 
 .toast-message {
     font-size: 1.2rem;
-    background-color: var(--primary-font-color);
-    border: 1px solid var(--primary-bg);
     padding: 0.2rem 1rem;
     color: var(--primary-bg);
 }
@@ -1210,8 +1206,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        /* background-color: #ffe6a7; */
-        background-color: white;
         width: 100vw;
         min-height: 100%;
         margin-top: 4.5rem;
@@ -1237,7 +1231,7 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        color: black;
+       
         font-size: 1.5rem;
     }
     /* .mobile-nav-links:hover {
@@ -1266,7 +1260,7 @@
     .ham-burger div {
         width: 35px;
         height: 5px;
-        background-color: black;
+        background-color: white;
         margin: 6px 0;
         transition: 0.4s;
     }
