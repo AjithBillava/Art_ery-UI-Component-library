@@ -1,12 +1,35 @@
 
+var isIndexHamBurgerClicked = true;
+var indexMobileNav = document.querySelector("#index-mobile-nav")
+var indexHamburgerBtn = document.querySelector("#index-ham-burger")
+var indexContainer = document.querySelector("#index-container");
+function indexHamBurgerFunction() {
+    if (isIndexHamBurgerClicked) {
+        indexMobileNav.style.display = "flex"
+        indexContainer.style.display = "none"
+
+        isIndexHamBurgerClicked = false
+    } else {
+        indexMobileNav.style.display = "none"
+
+        indexContainer.style.display = "flex"
+
+        isIndexHamBurgerClicked= true
+
+    }
+}
+indexHamburgerBtn.addEventListener("click",indexHamBurgerFunction)
 
 
-var closeModalBtn=document.querySelector("#close-modal");
-var showModalBtn=document.querySelector("#show-modal");
-var modal=document.querySelector("#modal")
 
 
+function windowResizeFunction() {
+    if (window.matchMedia("(min-width: 780px)").matches) { 
+        indexContainer.style.display = "flex";
+        indexMobileNav.style.display = "none"
+        isIndexHamBurgerClicked= true
 
-showModalBtn.addEventListener("click",()=>modal.style.display="block")
+    } 
+}
 
-closeModalBtn.addEventListener("click",()=>{modal.style.display="none"})
+window.addEventListener("resize",windowResizeFunction)
