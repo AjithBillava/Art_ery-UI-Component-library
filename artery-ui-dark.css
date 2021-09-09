@@ -967,7 +967,7 @@
     width: var(--width-20);
     top: auto;
     border: 1px solid var(--primary-bg);
-    background-color: white;
+    background-color: #1e1d1d;
     padding: var(--padding-1);
     border-radius: 0.4rem;
     margin: var(--margin-3);
